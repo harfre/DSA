@@ -20,15 +20,15 @@ public class DssMain {
 
         //Any of two readers:
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-//        BufferedReader reader = null;
-//        try {
-//            reader = new BufferedReader(new FileReader("verify"));
-//        } catch (Exception e) {
-//            System.out.println("Input file not found");
-//            System.exit(0);
-//        }
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader("verify"));
+        } catch (Exception e) {
+            System.out.println("Input file not found");
+            System.exit(0);
+        }
 
         //Import p,q,g
         for (int i = 0; i < 3; i++) {
